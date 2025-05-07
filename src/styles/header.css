@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Clash Display';
+  src: url('../fonts/OTF/ClashDisplay-Light.otf') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display 1';
+  src: url('../fonts/OTF/ClashDisplay-Regular.otf') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display 2';
+  src: url('../fonts/OTF/ClashDisplay-Bold.otf') format('woff2');
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-right: .5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  color: white;
+  
+}
+
+.div-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115vh;
+  background-color: #5f644e21; /* Capa negra semitransparente */
+  z-index: 1;
+  pointer-events: none;
+}
+.div-header {
+  height: 115vh;
+  background-image: url(images/fondo-mujer-inicio.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo-header {
+  width: 240px;
+  margin-top: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  color: white;
+  list-style: none;
+  margin-top: 3rem;
+  cursor: pointer;
+  font-family: 'Clash Display';
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-style: inherit;
+  font-weight:600;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: rgba(7, 194, 7, 0.685);
+  transform: scale(1.2);
+}
+
+.marker-img {
+  width: 1.2rem;
+  margin-right: .5rem;
+}
+
+.header-div-main {
+  width: 60%;
+  margin-left: 3rem;
+  position: relative;
+  top: 8rem;
+}
+
+.city {
+  font-size: 1.5rem;
+  line-height: .5;
+}
+.header-div-main>h1 {
+  font-size:3rem;
+  line-height: .9;
+}
+
+.header-div-main>h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: .9;
+}
+
+.btn-header {
+  padding: 20px 30px;
+  border-radius: .5rem;
+  background-image: linear-gradient(128deg, rgba(67, 180, 155, 1) 0%, rgba(76, 171, 51, 1) 100%);;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+  margin-right: .5rem;
+}
+
+.btn-header:hover {
+  background-image: linear-gradient(128deg, rgb(13, 218, 47) 0%, rgb(65, 147, 202) 100%);
+}
+
+.btn-header-map {
+  background-color: rgba(82, 78, 78, 0.315);
+  padding: 20px 30px;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+}
+
+.btn-header-map:hover {
+  background-color: rgba(82, 78, 78, 0.918);
+}
+
+.img-contact-header {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 1rem;
+}
+
+.title-bold {
+  font-family: 'Clash Display 2';
+}
+
+.clash-light {
+  font-family: 'Clash Display 1';
+}
+
+.h3-header {
+  width: 70%;
+}
+
+.btn-burguer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .img-contact-header {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .header-div-main {
+    height: 80%;
+    width: 80%;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    right: 20vw;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.986);
+    z-index: 10;
+  }
+
+  .header-div-main>h1 {
+    font-size: 14vw;
+  }
+  
+  .btn-burguer {
+    display: block;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-header {
+    width: 10rem;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+
+  .btn-header, .btn-header-map {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+

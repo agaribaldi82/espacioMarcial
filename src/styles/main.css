@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../fonts/OTF/ClashDisplay-Light.otf') format('woff2');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Clash Display 2';
+    src: url('../fonts/OTF/ClashDisplay-Bold.otf') format('woff2');
+    font-style: normal;
+  }
+  
+
+main {
+
+    color: black;
+}
+
+.h1-conoce {
+    color: black;
+    font-size: 4rem;
+    line-height: .5;
+}
+
+.h1-pasion {
+    color: #4cab33;
+    font-size: 4rem;
+    line-height: .2;
+}
+
+.div-pasion {
+    width: 60%;
+}
+
+.section1-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.div-section-1 {
+    background-color: #4cab33;
+    font-family: 'Clash Display';
+    color: white;
+    padding: 2rem;
+    width: 20rem;
+}
+
+.div-info {
+    max-width: 100vw;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.img-muay {
+    width: 100%;
+    margin-right: 5rem;
+}
+
+.div-all {
+    max-width: 22rem;
+    font-family: 'Clash Display';
+}
+
+.subtitle-light {
+    font-family: 'Clash Display', sans-serif;
+
+    font-size: 1rem;
+  }
+
+.title-bold {
+    font-family: 'Clash Display 2';
+    font-size: 2rem;
+}
+
+.div-imagenes {
+    width: 25rem;
+    margin-right: 3rem;
+}
+
+.img-bjj {
+    width: 100%;
+    height: auto;
+}
+
+.paraTodos {
+    margin: auto;
+    color: white;
+    background-color: #17161e;
+    padding: 3rem;
+}
+
+.titulo-sec2 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 3;
+}
+.titulo-sec2-h1 {
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    line-height: 2;
+}
+
+
+.seccion1 {
+    margin-left: 5rem;
+}
+
+.div-render {
+    margin-top: 3rem;
+    display: flex;
+}
+
+.div-item {
+    height: 25rem;
+    font-family: "Clash Display 2";
+    display: flex;
+    margin-right: 2rem;
+    background-color: #232323;
+    padding: 2rem;
+    border-radius: .5rem;
+
+}
+
+.kid-pic {
+    width: auto;
+    height: 100%;
+}
+
+.div-kids>h1 {
+    line-height: 1;
+    font-size: 2.5rem;
+}
+
+.div-kids>h3 {
+    font-family: 'Clash Display';
+    font-size: 1.5rem;
+}
+
+.div-horizontal {
+    display: flex;
+}
+
+.div_presentation {
+    height: 35rem;
+    position: relative;
+    margin: 3rem 2rem 0 3rem;
+}
+
+.ag-pic {
+    display: block;
+    height: 25rem;
+    width: 40rem;
+    border-radius: .5rem;
+}
+
+.div-information {
+    position: absolute;
+    bottom: 0;
+    width: 640px;
+    height: 11rem;
+    background-color: #17161e; /* Negro con transparencia */
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: .5rem;
+}
+
+.div-information>h1 {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.div-information>h3 {
+    font-size: 1.5rem;
+    line-height: 0;
+    margin-left: 1rem;
+}
+
+.div-verde {
+    position: absolute;
+    width: 18rem;
+    height: 12rem;
+    bottom: 6rem;
+    right: 15px;
+    background-color: rgba(17, 160, 17, 0.945);
+    color: white;
+    font-size: 2rem;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 2; /* Asegura que se muestre encima del cuadro negro */
+  }
+  
+  .contendor-actividades {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .h1-actividades {
+    background-color: #17161e;
+    color: white;
+    padding: 1.45rem;
+    font-family: 'Clash Display';
+  }
+
+  .div-actividades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  .h1-actividades:hover {
+    background-color: #4cab33;
+  }  
+
+  .titulo-actividades {
+    font-family: 'Clash Display';
+    font-size: 2.5rem;
+  }
+
+  .imagen-free {
+    background-image: url("images/get-a-trial-free-background-png.png");
+    margin-top: 5rem;
+    height: 25rem;
+    color: white;
+    font-family: 'Clash Display';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .span-gratis {
+    color: #4cab33;
+  }
+
+  .imagen-free>h1 {
+    font-size: 3rem;
+    line-height: 0;
+  }
+
+  .imagen-free>h2 {
+    margin-bottom: 3rem;
+  }
+
+  .span-futuro {
+    color: #4cab33;
+  }
+
+  .h1-futuro {
+    font-family: 'Clash Display 2';
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .div-futuro {
+    width: 43rem;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .h3-futuro {
+    padding: 0 5rem;
+    text-align: center;
+  }
+
+  .imagenes-gym {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .gym-pictures {
+    width: 37rem;
+  }
+
+  .contacto {
+    font-family: 'Clash Display';
+    display: flex;
+    background-color:#17161e;
+    color: white;
+    height: 33rem;
+  }
+
+  .logo-contacto {
+    width: 15rem;
+
+  }
+
+  .div-contacto {
+    width: 25rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+
+  }
+
+  .div-contacto > h1 {
+    font-size: 1.2rem;
+  }
+
+  .contacto-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+
+  .logos {
+    width: 3.8rem;
+  }
+
+  .div-logos {
+    display: flex;
+  }
+
+    .h3-cont {
+    line-height: .5;
+    font-family: 'Clash Display 2';
+    font-weight: 300;
+  }
+
+.marcador {
+    width: 1.5rem;
+}
+
+.direccion {
+    align-content: center;
+}
+
+.div-mapa {
+    margin-left: 10rem;
+}
+
+/* ======== MEDIA QUERY: TABLET (≥768px) ======== */
+@media (min-width: 768px) {
+  .seccion1> #h1-conoce {
+    line-height: 1;
+  }
+}
