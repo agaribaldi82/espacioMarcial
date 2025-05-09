@@ -8,12 +8,12 @@ import { Divs } from "./divs";
           <div className="div-pasion">
             <h1 className="h1-conoce" id="conoce">Conoce nuestra</h1>
             <h1 className="h1-pasion">Pasión y Compromiso</h1>
-            <h3>
+            <h3 className="h3-seccion1">
               Sumérgete en el apasionante mundo de las artes marciales y descubre los valores que
-              nos definen. Conócenos y vive experiencias únicas e inolvidables. ¡Te esperamos!
-            </h3>
+              nos definen. Conócenos y vive experiencias únicas e inolvidables. <span className="span-esperamos">Te esperamos!</span>
+            </h3> 
           </div>
-    
+  
           <div className="div-info">
             <div className="div-imagenes">
               <img className="img-muay" src="images/muay_thay1.jpeg" alt="Clase de Muay Thai" />
@@ -57,17 +57,17 @@ import { Divs } from "./divs";
         <section>
         <div className="div-horizontal">
           <div className="div_presentation">
-          <img className="ag-pic" src="images/ag_militar.JPG" alt="" />
-          <div className="div-information">
-            <h1>Krav Maga</h1>
-            <h3>Sistema Israelí de Defensa Personal</h3>
+            <img className="ag-pic" src="images/ag_militar.JPG" alt="" />
+            <div className="div-information">
+              <h1>Krav Maga</h1>
+              <h3 className="h3-kravmaga">Sistema Israelí de Defensa Personal</h3>
       
           <div className="div-verde">
           <h1>Instructor: Adrian Garibaldi</h1>
           <h3>Ex Instructor de las fuerzas especiales del ejército (Unidad Contraterrorista y Compañía Comandos)</h3>
           <h3>Graduado a Nivel Experto en el año 2019 en Altos de Golan- Israel</h3>
           <h3>13 años de experiencia</h3>
-       </div>
+        </div>
     </div>
   </div>
   <div className="contendor-actividades" id="actividades">
@@ -90,7 +90,7 @@ import { Divs } from "./divs";
   <div className="imagen-free">
     <h1>Adquiere una clase de prueba <span className="span-gratis">GRATIS</span></h1>
     <h2>Válido para cualquiera de nuestras acividades</h2>
-    <button className="btn-header">Quiero empezar!</button>
+    <button className="btn-header btn-quieroEmpezar">Quiero empezar!</button>
   </div>
 </section>
 <section>
@@ -144,7 +144,6 @@ import { Divs } from "./divs";
       referrerPolicy="no-referrer-when-downgrade"
     />
     </div>
-  
 </section>
       </main>
     );

@@ -10,22 +10,30 @@
     font-style: normal;
   }
   
-
+body {
+  
+}
 main {
-
+  font-family: "Clash Display";
     color: black;
 }
 
 .h1-conoce {
     color: black;
     font-size: 4rem;
+    font-family: "Clash Display 2";
     line-height: .5;
 }
 
 .h1-pasion {
+  font-family: "Clash Display 2";
     color: #4cab33;
     font-size: 4rem;
     line-height: .2;
+}
+
+.span-esperamos {
+  font-family: "Clash Display 1";
 }
 
 .div-pasion {
@@ -147,12 +155,14 @@ main {
 }
 
 .div_presentation {
+
     height: 35rem;
     position: relative;
     margin: 3rem 2rem 0 3rem;
 }
 
 .ag-pic {
+  width: 100%;
     display: block;
     height: 25rem;
     width: 40rem;
@@ -160,11 +170,12 @@ main {
 }
 
 .div-information {
+  width: 100%;
     position: absolute;
     bottom: 0;
     width: 640px;
     height: 11rem;
-    background-color: #17161e; /* Negro con transparencia */
+    background-color: #17161e;
     color: white;
     padding: 10px;
     box-sizing: border-box;
@@ -235,6 +246,7 @@ main {
     color: white;
     font-family: 'Clash Display';
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -245,6 +257,8 @@ main {
   }
 
   .imagen-free>h1 {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 3rem;
     line-height: 0;
   }
@@ -342,9 +356,197 @@ main {
     margin-left: 10rem;
 }
 
+
+
 /* ======== MEDIA QUERY: TABLET (≥768px) ======== */
-@media (min-width: 768px) {
-  .seccion1> #h1-conoce {
-    line-height: 1;
+@media (max-width: 768px) {
+  .seccion1 {
+    margin-left: .3rem;
+  }
+  .h1-conoce {
+    line-height: .8;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+  }
+
+  .h1-pasion {
+    line-height: .8;
+    font-size: 3.2rem;
+    margin-top: 0;
+  }
+
+  .div-pasion {
+    width: 100%;
+  }
+
+  .div-info {
+    flex-wrap: wrap;
+    width: 96%;
+  }
+
+  .div-imagenes {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .section1-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-section-1 {
+    width: 80vw;
+  }
+
+  .div-render {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .div-item {
+    min-width: 100%; 
+    height: 100%;               /* Que no ocupe todo el ancho */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    overflow: hidden;          /* Impide que se desborde */
+  }
+
+  .kid-pic {
+    max-width: 100%;           /* Limita el ancho */
+    height: auto;
+    object-fit: cover;         /* Ajusta imagen dentro del contenedor */
+    margin-top: 1rem;
+  }
+
+  .div-kids {
+    text-align: center;
+
+  }
+  .paraTodos {
+    width: 75%;
+    text-align: center;
+  }
+
+  .div-horizontal {
+    flex-wrap: wrap;
+    margin: 0 .8rem;
+  }
+  .div_presentation {
+    width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ag-pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .div-information {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    background-color: #f7f7f7; /* opcional */
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .div-verde {
+    top: 15rem;
+  }
+
+  .div-information .h3-kravmaga {
+    font-size: 1.1rem;
+  }
+
+  .imagen-free {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imagenes-gym {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gym-pictures {
+    align-content: center;
+    width: 90vw;
+  }
+
+  .h3-futuro {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15rem;
+  }
+
+  .div-mapa {
+    margin-left: 0;
+  }
+
+  .div-mapa iframe {
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+
+  .div-futuro {
+    width: 100%;
+  }
+
+  footer {
+    width: 80%;
+    font-size: .8rem;
+    display: flex;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .btn-quieroEmpezar {
+    min-width: 50%;
+  }
+
+  .direccion {
+    color: black;
+  }
+
+  .imagen-free {
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+
+  .imagen-free > h1,
+.imagen-free > h2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.span-gratis {
+  display: inline;
+}
+
+  .imagen-free > h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    display: block;
   }
 }
