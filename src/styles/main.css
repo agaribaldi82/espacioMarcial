@@ -36,6 +36,11 @@ main {
   font-family: "Clash Display 1";
 }
 
+.karate {
+  position: absolute;
+  display: none;
+}
+
 .div-pasion {
     width: 60%;
 }
@@ -208,7 +213,7 @@ main {
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 4px;
-    z-index: 2; /* Asegura que se muestre encima del cuadro negro */
+    z-index: 2; 
   }
   
   .contendor-actividades {
@@ -406,18 +411,18 @@ main {
 
   .div-item {
     min-width: 100%; 
-    height: 100%;               /* Que no ocupe todo el ancho */
+    height: 100%;               
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
     margin-left: 2rem;
-    overflow: hidden;          /* Impide que se desborde */
+    overflow: hidden;          
   }
 
   .kid-pic {
-    max-width: 100%;           /* Limita el ancho */
+    max-width: 100%;           
     height: auto;
-    object-fit: cover;         /* Ajusta imagen dentro del contenedor */
+    object-fit: cover;         
     margin-top: 1rem;
   }
 
@@ -451,16 +456,33 @@ main {
 
   .div-information {
     width: 100%;
-    height: auto;
+    height: 15rem;
     position: static;
-    margin-top: 1rem;
-    border-radius: .5rem;
+    padding-top: 4rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     padding: 1rem;
-    background-color: #f7f7f7; /* opcional */
-    color: black;
+    background-color: #080808f6; 
+    color: white;
     display: flex;
     flex-wrap: wrap;
   }
+
+  .h1-kravmaga {
+    padding-top: 3rem;
+    margin-bottom: 0;
+  }
+
+
+  .ag-pic {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   .div-verde {
     top: 15rem;
   }
@@ -493,7 +515,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 15rem;
+    margin-bottom: 25rem;
   }
 
   .div-mapa {
@@ -507,12 +529,6 @@ main {
 
   .div-futuro {
     width: 100%;
-  }
-
-  footer {
-    width: 80%;
-    font-size: .8rem;
-    display: flex;
   }
 
   main {
