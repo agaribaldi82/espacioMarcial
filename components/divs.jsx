@@ -5,7 +5,7 @@ export function Divs({ img, title, text }) {
         <div className="div-kids">
             <h1>{title}</h1>
             <h3>{text}</h3>
-            <button className="btn-header">Más información</button>
+            <button className="btn-header" onClick={() => window.open("https://wa.me/59899008018", "_blank")}>Más información</button>
         </div>
         <div>
             <img className="kid-pic" src={img} alt="" />

@@ -140,7 +140,7 @@ export default function Main({ infoData }) {
             Adquiere una clase de prueba <span className="span-gratis">GRATIS</span>
           </h1>
           <h2>Válido para cualquiera de nuestras acividades</h2>
-          <button className="btn-header btn-quieroEmpezar">Quiero empezar!</button>
+          <button className="btn-header btn-quieroEmpezar" onClick={() => window.open("https://wa.me/59899008018", "_blank")}>Quiero empezar!</button>
         </div>
       </section>
 
